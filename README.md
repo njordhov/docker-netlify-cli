@@ -10,7 +10,7 @@ Possibly related: "You have to use a third-party Docker container if you want to
 
 The "netlify/" directory contains a basic edge function taken from [get started](https://docs.netlify.com/edge-functions/get-started/) in the netlify documentation.
 
-The docker-compose.yml file defines a netlify-cli service based on the [ghcr.io/williamjacksn/netlify-cli:13.1.1](https://github.com/williamjacksn/docker-netlify-cli/pkgs/container/netlify-cli) image and is set to linux/amd64 to accommodate Deno. However, this setting unfortunately doesn't make a difference.
+The docker-compose.yml file defines a netlify-cli service based on the [ghcr.io/williamjacksn/netlify-cli](https://github.com/williamjacksn/docker-netlify-cli/pkgs/container/netlify-cli) image and is set to linux/amd64 to accommodate Deno. However, this setting unfortunately doesn't make a difference.
 
 The NETLIFY_SITE_ID and NETLIFY_AUTH_TOKEN environment variables should be provided or added to the docker-compose.yml file.
 
