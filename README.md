@@ -12,20 +12,22 @@ The "netlify/" directory contains a basic edge function taken from [get started]
 
 The docker-compose.yml file defines a netlify-cli service based on the [ghcr.io/williamjacksn/netlify-cli](https://github.com/williamjacksn/docker-netlify-cli/pkgs/container/netlify-cli) image and is set to linux/amd64 to accommodate Deno. However, this setting unfortunately doesn't make a difference.
 
-The NETLIFY_SITE_ID and NETLIFY_AUTH_TOKEN environment variables should be provided or added to the docker-compose.yml file.
+The NETLIFY_SITE_ID and NETLIFY_AUTH_TOKEN environment variables should be provided or added to the docker-compose.yml file before executing `docker compose`:
+
+```bash
+docker compose run netlify-cli build
+```
 
 Building and deploying the example using the netlify-cli in docker should work on all platforms.
 
 However, using netlify-cli in docker to build ~~and deploy~~ fails on my Mac M1 while bundling edge functions.
 
-Here is the output when executing `netlify deploy` (NOTE: no longer failing with netlify-cli 13.1.3):
-
-![image](https://user-images.githubusercontent.com/219448/224598468-dfa8aa52-ab57-4a2c-88fe-e21101781308.png)
-
-Here is the output when executing `netlify build`:
+Here is the output when executing `docker compose run netlify-cli build` (or alternatively `netlify build` in a shell in the docker container):
 
 ![image](https://user-images.githubusercontent.com/219448/224591786-afd8c1cc-cc0a-4baa-a4c7-32fde35fe58a.png)
 
+Here is the output when executing `docker compose run netlify-cli deploy` (or alternatively `netlify deploy` in a shell in the docker container) (NOTE: no longer failing with netlify-cli 13.1.3):
 
+![image](https://user-images.githubusercontent.com/219448/224598468-dfa8aa52-ab57-4a2c-88fe-e21101781308.png)
 
 
