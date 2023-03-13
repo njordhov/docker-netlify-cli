@@ -16,9 +16,9 @@ The NETLIFY_SITE_ID and NETLIFY_AUTH_TOKEN environment variables should be provi
 
 Building and deploying the example using the netlify-cli in docker should work on all platforms.
 
-However, using netlify-cli in docker to build and deploy fails on my Mac M1 while bundling edge functions.
+However, using netlify-cli in docker to build ~~and deploy~~ fails on my Mac M1 while bundling edge functions.
 
-Here is the output when executing `netlify deploy`:
+Here is the output when executing `netlify deploy` (NOTE: no longer failing with netlify-cli 13.1.3):
 
 ![image](https://user-images.githubusercontent.com/219448/224598468-dfa8aa52-ab57-4a2c-88fe-e21101781308.png)
 
