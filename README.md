@@ -26,7 +26,7 @@ Here is the output when executing `docker compose run netlify-cli build` (or alt
 
 ![image](https://user-images.githubusercontent.com/219448/224591786-afd8c1cc-cc0a-4baa-a4c7-32fde35fe58a.png)
 
-Here is the output when executing `docker compose run netlify-cli deploy` (or alternatively `netlify deploy` in a shell in the docker container) (NOTE: no longer failing with netlify-cli 13.1.3):
+Here is the output when executing `docker compose run netlify-cli deploy` (or alternatively `netlify deploy` in a shell in the docker container) (NOTE: no longer failing with netlify-cli 13.1.3 as long as "[[edge_functions]]" is not defined in netlify.toml):
 
 ![image](https://user-images.githubusercontent.com/219448/224598468-dfa8aa52-ab57-4a2c-88fe-e21101781308.png)
 
