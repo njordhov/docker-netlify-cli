@@ -6,8 +6,6 @@ See https://github.com/williamjacksn/docker-netlify-cli
 
 Possibly related: "You have to use a third-party Docker container if you want to use Docker locally and develop on an M1 Mac" and "they also can't produce musl libc binaries - so no alpine linux either." https://news.ycombinator.com/item?id=34768122
 
-Possibly related: "When I run Deno in a Docker container on an Apple M1 Mac and add the --watch flag, I get a “Function not implemented” error." https://github.com/denoland/deno/issues/14244
-
 ## Replicating the Problem on M1
 
 The "netlify/" directory contains a basic edge function taken from [get started](https://docs.netlify.com/edge-functions/get-started/) in the netlify documentation.
