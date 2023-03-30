@@ -4,7 +4,11 @@ This repo serves as a minimal setup for using netlify-cli in a docker container 
 
 See https://github.com/williamjacksn/docker-netlify-cli
 
+Possibly related: https://github.com/netlify/cli/issues/5181
+
 Possibly related: "You have to use a third-party Docker container if you want to use Docker locally and develop on an M1 Mac" and "they also can't produce musl libc binaries - so no alpine linux either." https://news.ycombinator.com/item?id=34768122
+
+Possibly related: https://github.com/netlify/cli/issues/5494
 
 ## Replicating the Problem on M1
 
@@ -20,7 +24,7 @@ docker compose run netlify-cli build
 
 Building and deploying the example using the netlify-cli in docker should work on all platforms.
 
-However, using netlify-cli in docker to build ~~and deploy~~ fails on my Mac M1 while bundling edge functions.
+However, using netlify-cli in docker to build ~~and deploy~~ fails on my Mac M1 while bundling edge functions (still with netlify-cli 13.2.2).
 
 Here is the output when executing `docker compose run netlify-cli build` (or alternatively `netlify build` in a shell in the docker container):
 
