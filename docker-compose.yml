@@ -3,7 +3,7 @@ version: "3.9"
 services:
   netlify-cli:
     platform: linux/amd64  ## Deno doesn't have executable for Linux aarch64
-    image: ghcr.io/williamjacksn/netlify-cli:13.2.2
+    image: ghcr.io/williamjacksn/netlify-cli:14.1.0
     user: root
     environment:
       NETLIFY_SITE_ID: ${NETLIFY_SITE_ID}

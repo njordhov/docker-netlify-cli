@@ -24,7 +24,7 @@ docker compose run netlify-cli build
 
 Building and deploying the example using the netlify-cli in docker should work on all platforms.
 
-However, using netlify-cli in docker to build ~~and deploy~~ fails on my Mac M1 while bundling edge functions (still with netlify-cli 13.2.2).
+However, using netlify-cli in docker to build ~~and deploy~~ fails on my Mac M1 while bundling edge functions (still with netlify-cli 14.1.0).
 
 Here is the output when executing `docker compose run netlify-cli build` (or alternatively `netlify build` in a shell in the docker container):
 
